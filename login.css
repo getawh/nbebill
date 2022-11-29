@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    background-color: #FFF;  
+    border-width: 3px;
+    border-color: #000;
+    border-radius: 20px;
+    border-style: solid;
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+form div {
+    margin: 5px 0;
+}
+
+
+.input_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: 60%;
+    align-items: center;
+    
+}
+.previlage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+}
+
+
+.input_form input{
+    height: 3em;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 3px;
+    outline-style: none;
+    text-align: center;
+    font-family:'Poppins', sans-serif ; 
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#login{
+    width: 40%;
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+}
+
+#login:hover{
+    background-color: #FFF;
+    color: #000;
+    transition: .3s ease-in-out;
+}
+
+.footer a{
+    text-decoration: none;
+    color: brown;
+}
+@media screen and (max-width: 600px) {
+    form {
+      width: 90%;
+      margin-top: 10px;
+    }
+    .input_form{
+    	height:40%;
+    }
+  }
